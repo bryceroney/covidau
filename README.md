@@ -8,49 +8,29 @@
 [![R-CMD-check](https://github.com/bryceroney/covidau/workflows/R-CMD-check/badge.svg)](https://github.com/bryceroney/covidau/actions)
 <!-- badges: end -->
 
-The goal of covidau is to …
+This is a bit of a playground for me to learn building packages. At the
+moment it just contains one function, `cases` for loading cases.
 
-## Installation
-
-You can install the released version of covidau from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("covidau")
-```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+## Example:
 
 ``` r
 library(covidau)
-## basic example code
+
+act_cases <- cases('ACT')
+head(act_cases)
+#> # A tibble: 6 x 6
+#>   date         new cases   var   net state
+#>   <date>     <dbl> <dbl> <dbl> <dbl> <chr>
+#> 1 2021-10-03    38  1101    NA    38 ACT  
+#> 2 2021-10-02    52  1063    NA    52 ACT  
+#> 3 2021-10-01    52  1011    NA    52 ACT  
+#> 4 2021-09-30    31   959    NA    31 ACT  
+#> 5 2021-09-29    22   928    NA    22 ACT  
+#> 6 2021-09-28    13   906    NA    13 ACT
+
+plot(act_cases$date, act_cases$cases, type='line')
+#> Warning in plot.xy(xy, type, ...): plot type 'line' will be truncated to first
+#> character
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />

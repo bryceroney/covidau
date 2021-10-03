@@ -21,3 +21,7 @@ Imports:
     rvest
 URL: https://bryceroney.github.io/covidau, https://github.com/bryceroney/covidau
 BugReports: https://github.com/bryceroney/covidau/issues
+Suggests: 
+    httptest,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
