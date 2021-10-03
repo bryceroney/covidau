@@ -1,7 +1,7 @@
 Package: covidau
 Type: Package
 Title: Functions For Downloading Tidy COVID Data in Australia
-Version: 0.1.0
+Version: 0.0.0.9000
 Authors@R: person("Bryce", "Roney", email = "bryceroney@protonmail.com",
   role = c("aut", "cre"))
 Description: This is predominantly a proof of concept package to assist me with
@@ -11,7 +11,11 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.2
 Imports: 
+    dplyr,
     httr2,
     janitor,
+    lubridate,
     magrittr,
+    purrr,
+    rlang,
     rvest

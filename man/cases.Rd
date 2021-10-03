@@ -15,4 +15,5 @@ Load the daily cases for a set of states
 \examples{
 data <- cases(c('ACT', 'NSW'))
 head(data)
+
 }
