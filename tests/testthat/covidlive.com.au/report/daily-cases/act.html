@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <!-- Title -->  
+  <title>Daily Confirmed Cases in ACT - COVID Live</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Anthony Macali" />
+  <meta name="description" content="Live tracking of coronavirus cases, active, tests, deaths, ICU, hospitalisations and vaccinations in ACT" />
+  <meta name="keywords" content="COVID-19, Coronavirus, Cases, Australia, Active, Live, Vaccinations, Doses">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2a2868" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Daily Confirmed Cases in ACT - COVID Live" />
+  <meta property="og:url" content="https://covidlive.com.au/report/daily-cases/act" />
+  <meta property="og:description" content="Live tracking of coronavirus cases, active, tests, deaths, ICU, hospitalisations and vaccinations in ACT" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.covidlive.com.au/images/preview/case.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="300" />
+  <meta property="og:image:height" content="200" />  
+  
+  <meta name="twitter:site" content="@covidliveau" />
+  <meta name="twitter:creator" content="@migga" />
+  
+  <!-- Stylesheet -->
+  <link rel="canonical" href="https://covidlive.com.au/report/daily-cases/act" />    
+  <link rel="stylesheet" type="text/css" href="/style/style.css?id=31.4" media="all" />    
+  <link rel="stylesheet" type="text/css" href="/style/icons.css?id=3.1" media="all" />    
+  <link rel="shortcut icon" href="/style/favicon.png" />
+  <link rel="apple-touch-icon" sizes="128x128" href="/style/favicon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38537626-10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-38537626-10');    
+  </script>
+
+  <!-- Google Adsense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3913992592252192" crossorigin="anonymous"></script>
+</head>
+
+<!-- BODY -->
+<body id="page-report" class="page-state-act" >
+<div class="wrapper">
+
+  <!-- Header -->      
+  <header>
+    <div class="container">
+      <table>
+        <tr class="STATS">
+          <td class="TITLE"><a href="/">COVID <span>LIVE</span></a></td>
+          <td class="VACCINATIONS"><a href="/vaccinations">92.7%</a></td>
+          <td class="MA"><a href="/vaccinations">66.6%</a></td>
+          <td class="ICU"><a href="/hospitalised">5</a></td>
+        </tr>
+        <tr class="TH">          
+          <td class="LAST_UPDATED">Last updated <a href="/last-updated">30 minutes ago</a></td>
+          <td class="VACCINATIONS">1st Dose<span> 16+</span></td>
+          <td class="MA">2nd Dose<span> 16+</span></td>
+          <td class="ICU">ICU</td>
+        </tr>
+      </table>
+      <br class="clear" /> 
+    </div>   
+  </header>
+
+  <!-- Menu -->
+  <div class="menu" id="menu">
+    <ul class="container">  
+      <li class="button btn1"><a class="btn-grey icon icon-home" title="Home" href="/">Home</a></li>
+      <li class="button btn2"><a class="btn-grey icon icon-aus" title="State and Territories" href="/states-and-territories">States</a></li>
+      <li class="button btn3"><a class="btn-grey icon icon-world" title="World" href="/world">World</a></li>      
+      <li class="button btn4"><a class="btn-grey icon icon-mask nav" title="Navigation Menu">Nav</a></li>   
+      <br class="clear" />      
+    </ul>
+  </div>
+
+  <div class="menu shadow" id="menu-sub">
+    <ul class="container">
+      <li class="button btn1"><a class="btn-purple icon icon-cases" title="Cases" href="/cases">Cases</a></li>       
+      <li class="button btn2"><a class="btn-purple icon icon-vaccine" title="Vaccinations" href="/vaccinations">Vaccine</a></li>      
+      <li class="button btn3"><a class="btn-purple icon icon-tests" title="Tests" href="/tests">Tests</a></li>           
+      <li class="button btn4"><a class="btn-purple icon icon-hospital" title="Hospital" href="/hospitalised">Hospital</a></li>
+
+      <br class="clear" />     
+      <li class="button btn1"><a class="btn-purple icon icon-source" title="Source of Infection" href="/source-of-infection">Source</a></li>  
+      <li class="button btn2"><a class="btn-purple icon icon-active" title="Active Cases" href="/active-cases">Active</a></li>                      
+      <li class="button btn3"><a class="btn-purple icon icon-recoveries" title="Recoveries" href="/recoveries">Recov</a></li> 
+      <li class="button btn4"><a class="btn-purple icon icon-deaths" title="Deaths" href="/deaths">Deaths</a></li>                       
+      <br class="clear" />   
+      
+      <li class="button btn1"><a class="btn-blue icon icon-summary" title="Daily Summary" href="/daily-summary">Summary</a></li> 
+      <li class="button btn1"><a class="btn-blue icon icon-breach" title="Breaches" href="https://docs.google.com/spreadsheets/d/15kdyqFGfJdFi0KaTbZp-UDw8WwoKu6OPRs5V5ZzO1c0">Breaches</a></li> 
+      <li class="button btn3"><a class="btn-blue icon icon-question" title="FAQs" href="/faqs">FAQs</a></li>      
+      <li class="button btn4"><a class="btn-blue icon icon-resources" title="Resources" href="/resources">Sources</a></li>      
+      <br class="clear" />         
+
+      <li class="button btn1"><a class="btn-green icon icon-about" title="About" href="/about">About</a></li>      
+      <li class="button btn2"><a class="btn-green icon icon-twitter" title="Twitter" href="https://twitter.com/covidliveau" target="_blank">Twitter</a></li>
+      <li class="button btn3"><a class="btn-green icon icon-support" title="Donate" href="/support">Donate</a></li>      
+      <li class="button btn4"><a class="btn-green icon icon-contact" title="Contact" href="mailto:contact@covidlive.com.au">Contact</a></li>
+      <br class="clear" />   
+    </ul>
+  </div>
+
+  <!-- Content -->  
+  <div id="content">
+    <div class="container">
+      
+      <!-- Row 1 -->      
+      <div class="box"><section class="DAILY-CASES STD-3">
+<h2><a href="/report/daily-cases/act">ACT Cases</a></h2>
+<h3>Daily Confirmed Cases</h3>
+<table class="DAILY-CASES"><tr class="TH">
+<th class="COL1 DATE"><a href="?sort=date">DATE</a></th><th class="COL2 NEW"><a href="?sort=new">NEW</a></th><th class="COL3 CASES"><a href="?sort=cases">CASES</a></th><th class="COL4 VAR">VAR</th><th class="COL5 NET"><a href="?sort=net">NET</a></th></tr>
+<tr class="even"><td class="COL1 DATE">03 Oct <span>21</span></td><td class="COL2 NEW">38</td><td class="COL3 CASES">1,101</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">38</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Oct <span>21</span></td><td class="COL2 NEW">52</td><td class="COL3 CASES">1,063</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">52</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Oct <span>21</span></td><td class="COL2 NEW">52</td><td class="COL3 CASES">1,011</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">52</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">30 Sep <span>21</span></td><td class="COL2 NEW">31</td><td class="COL3 CASES">959</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">31</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 Sep <span>21</span></td><td class="COL2 NEW">22</td><td class="COL3 CASES">928</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">22</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Sep <span>21</span></td><td class="COL2 NEW">13</td><td class="COL3 CASES">906</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">13</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Sep <span>21</span></td><td class="COL2 NEW">19</td><td class="COL3 CASES">893</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">19</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Sep <span>21</span></td><td class="COL2 NEW">25</td><td class="COL3 CASES">874</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">25</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Sep <span>21</span></td><td class="COL2 NEW">32</td><td class="COL3 CASES">849</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">32</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Sep <span>21</span></td><td class="COL2 NEW">19</td><td class="COL3 CASES">817</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">19</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Sep <span>21</span></td><td class="COL2 NEW">16</td><td class="COL3 CASES">798</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">16</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Sep <span>21</span></td><td class="COL2 NEW">17</td><td class="COL3 CASES">782</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">17</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Sep <span>21</span></td><td class="COL2 NEW">16</td><td class="COL3 CASES">765</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">16</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Sep <span>21</span></td><td class="COL2 NEW">7</td><td class="COL3 CASES">749</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">7</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Sep <span>21</span></td><td class="COL2 NEW">17</td><td class="COL3 CASES">742</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">17</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Sep <span>21</span></td><td class="COL2 NEW">15</td><td class="COL3 CASES">725</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">15</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Sep <span>21</span></td><td class="COL2 NEW">30</td><td class="COL3 CASES">710</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">30</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Sep <span>21</span></td><td class="COL2 NEW">15</td><td class="COL3 CASES">680</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">15</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Sep <span>21</span></td><td class="COL2 NEW">13</td><td class="COL3 CASES">665</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">13</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Sep <span>21</span></td><td class="COL2 NEW">22</td><td class="COL3 CASES">652</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">22</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Sep <span>21</span></td><td class="COL2 NEW">13</td><td class="COL3 CASES">630</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">13</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Sep <span>21</span></td><td class="COL2 NEW">15</td><td class="COL3 CASES">617</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">15</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Sep <span>21</span></td><td class="COL2 NEW">15</td><td class="COL3 CASES">602</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">15</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Sep <span>21</span></td><td class="COL2 NEW">24</td><td class="COL3 CASES">587</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">24</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Sep <span>21</span></td><td class="COL2 NEW">15</td><td class="COL3 CASES">563</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">15</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Sep <span>21</span></td><td class="COL2 NEW">20</td><td class="COL3 CASES">548</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">20</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Sep <span>21</span></td><td class="COL2 NEW">19</td><td class="COL3 CASES">528</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">19</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Sep <span>21</span></td><td class="COL2 NEW">11</td><td class="COL3 CASES">509</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">11</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Sep <span>21</span></td><td class="COL2 NEW">15</td><td class="COL3 CASES">498</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">15</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Sep <span>21</span></td><td class="COL2 NEW">32</td><td class="COL3 CASES">483</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">32</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Sep <span>21</span></td><td class="COL2 NEW">18</td><td class="COL3 CASES">451</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">18</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Sep <span>21</span></td><td class="COL2 NEW">12</td><td class="COL3 CASES">433</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">12</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Sep <span>21</span></td><td class="COL2 NEW">23</td><td class="COL3 CASES">421</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">23</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">31 Aug <span>21</span></td><td class="COL2 NEW">13</td><td class="COL3 CASES">398</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">13</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 Aug <span>21</span></td><td class="COL2 NEW">12</td><td class="COL3 CASES">385</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">11</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 Aug <span>21</span></td><td class="COL2 NEW">13</td><td class="COL3 CASES">374</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">13</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 Aug <span>21</span></td><td class="COL2 NEW">26</td><td class="COL3 CASES">361</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">26</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 Aug <span>21</span></td><td class="COL2 NEW">21</td><td class="COL3 CASES">335</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">21</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 Aug <span>21</span></td><td class="COL2 NEW">14</td><td class="COL3 CASES">314</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">14</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 Aug <span>21</span></td><td class="COL2 NEW">9</td><td class="COL3 CASES">300</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">9</span></td></tr>
+<tr class="even"><td class="COL1 DATE">24 Aug <span>21</span></td><td class="COL2 NEW">30</td><td class="COL3 CASES">291</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">30</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">23 Aug <span>21</span></td><td class="COL2 NEW">16</td><td class="COL3 CASES">261</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">16</span></td></tr>
+<tr class="even"><td class="COL1 DATE">22 Aug <span>21</span></td><td class="COL2 NEW">19</td><td class="COL3 CASES">245</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">19</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">21 Aug <span>21</span></td><td class="COL2 NEW">8</td><td class="COL3 CASES">226</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">8</span></td></tr>
+<tr class="even"><td class="COL1 DATE">20 Aug <span>21</span></td><td class="COL2 NEW">12</td><td class="COL3 CASES">218</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">11</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">19 Aug <span>21</span></td><td class="COL2 NEW">16</td><td class="COL3 CASES">207</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">16</span></td></tr>
+<tr class="even"><td class="COL1 DATE">18 Aug <span>21</span></td><td class="COL2 NEW">22</td><td class="COL3 CASES">191</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">22</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">17 Aug <span>21</span></td><td class="COL2 NEW">17</td><td class="COL3 CASES">169</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">17</span></td></tr>
+<tr class="even"><td class="COL1 DATE">16 Aug <span>21</span></td><td class="COL2 NEW">19</td><td class="COL3 CASES">152</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">19</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">15 Aug <span>21</span></td><td class="COL2 NEW">3</td><td class="COL3 CASES">133</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">3</span></td></tr>
+<tr class="even"><td class="COL1 DATE">14 Aug <span>21</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">130</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">13 Aug <span>21</span></td><td class="COL2 NEW">4</td><td class="COL3 CASES">129</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">4</span></td></tr>
+<tr class="even"><td class="COL1 DATE">12 Aug <span>21</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">125</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">11 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">10 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">09 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">08 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">07 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">06 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">05 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">04 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">03 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">02 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">01 Aug <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">31 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">30 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Jul <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">30 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Jun <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">31 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">24 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">23 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">22 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">21 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">20 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">19 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">18 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">17 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">16 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">15 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">14 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">13 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">12 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">11 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">10 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">09 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">08 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">07 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">06 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">05 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">04 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">03 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">02 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">01 May <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 Apr <span>21</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">124</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">24 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">23 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">22 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">21 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">20 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">19 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">18 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">17 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">16 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">15 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">14 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">13 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">12 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">11 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">10 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">09 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">08 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">07 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">06 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">05 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">04 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">03 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">02 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">01 Apr <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">31 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">30 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Mar <span>21</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">123</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">122</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">122</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Mar <span>21</span></td><td class="COL2 NEW">2</td><td class="COL3 CASES">122</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">2</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">120</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">120</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">120</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Mar <span>21</span></td><td class="COL2 NEW">2</td><td class="COL3 CASES">120</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">2</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Mar <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Feb <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">31 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">24 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">23 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">22 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">21 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">20 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">19 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">18 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">17 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">16 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">15 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">14 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">13 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">12 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">11 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">10 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">09 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">08 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">07 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">06 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">05 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">04 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">03 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">02 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">01 Jan <span>21</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">31 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">30 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Dec <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">118</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Dec <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">30 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Nov <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">117</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Nov <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">116</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">115</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">115</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">115</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">115</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">115</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">115</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">115</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">115</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Nov <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">115</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Nov <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">31 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">24 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">23 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">22 Oct <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">114</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">21 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">20 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">19 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">18 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">17 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">16 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">15 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">14 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">13 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">12 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">11 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">10 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">09 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">08 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">07 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">06 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">05 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">04 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">03 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">02 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">01 Oct <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">24 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">23 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">22 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">21 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">20 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">19 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">18 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">17 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">16 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">15 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">14 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">13 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">12 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">11 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">10 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">09 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">08 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">07 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">06 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">05 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">04 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">03 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">02 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">01 Sep <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">31 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">30 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Aug <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">31 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">24 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">23 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">22 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">21 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">20 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">19 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">18 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">17 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">16 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">15 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">14 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">13 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">12 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">11 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">10 Jul <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">113</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">09 Jul <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">112</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">08 Jul <span>20</span></td><td class="COL2 NEW">3</td><td class="COL3 CASES">111</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">3</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">07 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">06 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">05 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">04 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">03 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">02 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">01 Jul <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">24 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">23 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">22 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">21 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">20 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">19 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">18 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">17 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">16 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">15 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">14 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">13 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">12 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">11 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">10 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">09 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">08 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">07 Jun <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">108</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">06 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">05 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">04 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">03 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">02 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">01 Jun <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">31 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">30 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 May <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">107</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">106</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">106</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 May <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">106</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">30 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">106</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">106</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">106</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">106</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">106</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Apr <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">106</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Apr <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">105</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">104</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">104</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">104</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Apr <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">104</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">103</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">103</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">103</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">103</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">103</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">103</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Apr <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">103</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Apr <span>20</span></td><td class="COL2 NEW">-1</td><td class="COL3 CASES">102</td><td class="COL4 VAR"><span class="green-down">&nbsp;</span></td><td class="COL5 NET"><span class="green">-1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">103</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Apr <span>20</span></td><td class="COL2 NEW">3</td><td class="COL3 CASES">103</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">3</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Apr <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">100</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Apr <span>20</span></td><td class="COL2 NEW">2</td><td class="COL3 CASES">99</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">2</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Apr <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">97</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Apr <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">96</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Apr <span>20</span></td><td class="COL2 NEW">3</td><td class="COL3 CASES">96</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">3</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Apr <span>20</span></td><td class="COL2 NEW">2</td><td class="COL3 CASES">93</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">2</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Apr <span>20</span></td><td class="COL2 NEW">4</td><td class="COL3 CASES">91</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">4</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Apr <span>20</span></td><td class="COL2 NEW">4</td><td class="COL3 CASES">87</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">3</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Apr <span>20</span></td><td class="COL2 NEW">5</td><td class="COL3 CASES">84</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">4</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">31 Mar <span>20</span></td><td class="COL2 NEW">3</td><td class="COL3 CASES">80</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">2</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 Mar <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">78</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 Mar <span>20</span></td><td class="COL2 NEW">7</td><td class="COL3 CASES">77</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">6</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 Mar <span>20</span></td><td class="COL2 NEW">9</td><td class="COL3 CASES">71</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">9</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 Mar <span>20</span></td><td class="COL2 NEW">9</td><td class="COL3 CASES">62</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">9</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 Mar <span>20</span></td><td class="COL2 NEW">9</td><td class="COL3 CASES">53</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">9</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 Mar <span>20</span></td><td class="COL2 NEW">5</td><td class="COL3 CASES">44</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">5</span></td></tr>
+<tr class="even"><td class="COL1 DATE">24 Mar <span>20</span></td><td class="COL2 NEW">7</td><td class="COL3 CASES">39</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">7</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">23 Mar <span>20</span></td><td class="COL2 NEW">13</td><td class="COL3 CASES">32</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">13</span></td></tr>
+<tr class="even"><td class="COL1 DATE">22 Mar <span>20</span></td><td class="COL2 NEW">10</td><td class="COL3 CASES">19</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">10</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">21 Mar <span>20</span></td><td class="COL2 NEW">3</td><td class="COL3 CASES">9</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">3</span></td></tr>
+<tr class="even"><td class="COL1 DATE">20 Mar <span>20</span></td><td class="COL2 NEW">2</td><td class="COL3 CASES">6</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">2</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">19 Mar <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">4</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="even"><td class="COL1 DATE">18 Mar <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">3</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">17 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">2</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">16 Mar <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">2</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">15 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">1</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">14 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">1</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">13 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">1</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">12 Mar <span>20</span></td><td class="COL2 NEW">1</td><td class="COL3 CASES">1</td><td class="COL4 VAR"><span class="red-up">&nbsp;</span></td><td class="COL5 NET"><span class="red">1</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">11 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">10 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">09 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">08 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">07 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">06 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">05 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">04 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">03 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">02 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">01 Mar <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">29 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">28 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">27 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">26 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">25 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">24 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">23 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">22 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">21 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">20 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">19 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">18 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">17 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">16 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">15 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">14 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">13 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">12 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">11 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">10 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">09 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">08 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">07 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">06 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">05 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">04 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">03 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">02 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">01 Feb <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">31 Jan <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">30 Jan <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">29 Jan <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">28 Jan <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">27 Jan <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="even"><td class="COL1 DATE">26 Jan <span>20</span></td><td class="COL2 NEW">0</td><td class="COL3 CASES">0</td><td class="COL4 VAR"><span class="zero">&nbsp;</span></td><td class="COL5 NET"><span>0</span></td></tr>
+<tr class="odd"><td class="COL1 DATE">25 Jan <span>20</span></td><td class="COL2 NEW"></td><td class="COL3 CASES">0</td><td class="COL4 VAR"></td><td class="COL5 NET">-</td></tr>
+</table>
+</section>
+
+</div>
+
+      <!-- Advert -->
+      
+  <!-- Ad: Footer -->
+  <div class="advert" id="ad-footer">
+      
+    <ins class="adsbygoogle"
+      style="display:block;"
+      data-ad-client="ca-pub-3913992592252192"
+      data-ad-slot="5366805039"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+      
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    
+  </div>
+
+
+    </div>
+  </div>
+
+
+
+  <!-- FOOTER //-->
+  <footer>
+    <div class="container" id="footer">
+      <div class="box1">
+        <a href="/support"><img src="/images/icons/social/heart.png" alt="Donate" title="Donate" /></a>
+        <p><a href="/support">Donate</a> to support our work.
+        <br />Site licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+        <br class="clear" />
+      </div>
+
+      <div class="box2">
+      <a href="/last-updated"><img src="/images/icons/bookcase.png" alt="Data" /></a>
+        <p><a href="#">COVID Live</a> data is collected from media releases and <a href="/last-updated">verified</a> against state and federal health departments.</p>
+        <br class="clear" />
+      </div><br class="clear" />
+    </div>
+  </footer>
+
+  <!-- Ad Footer -->
+    
+<!-- WRAPPER //-->
+</div>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+  
+    // Menu
+    $('.nav').click(function(){
+      $(this).toggleClass('nav-open');
+      $('#menu-sub').toggleClass('menu-open');
+    });
+
+    $('.nav').click(function(evt){    
+       if(evt.target.id == "nav") {
+        $('.nav').toggleClass('nav-open');
+        $('#menu-sub').toggleClass('menu-open');
+       }
+    });
+
+    // Menu Lock
+    $(window).bind('scroll',function() {
+
+      if ($(window).scrollTop() > 120) {
+        $('#menu').addClass('fixed-menu');
+        $('#menu-sub').addClass('fixed-submenu');        
+        $('#content').addClass('fixed-content');
+      } else {
+        $('#menu').removeClass('fixed-menu');
+        $('#menu-sub').removeClass('fixed-submenu');
+        $('#content').removeClass('fixed-content');
+      }
+
+      if ($(window).scrollTop() > 120*5) {
+        $('#ad-sticky').delay(400).slideUp(800);
+      }
+
+    });
+    
+    // Postcode Search
+    $("#search").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+
+      $("table.CASES-BY-POSTCODE tr:not('[class^=TH]')").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+
+      $("table.CASES-WORLDWIDE tr:not('[class^=TH]')").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+
+      $("table.DEATHS-WORLDWIDE tr:not('[class^=TH]')").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });   
+      
+      $("table.VACCINATIONS-WORLDWIDE tr:not('[class^=TH]')").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });       
+
+    });
+
+  });
+</script>
+
+</body>
+</html>
