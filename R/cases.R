@@ -6,6 +6,8 @@
 #' @examples
 #' data <- cases(c('ACT', 'NSW'))
 #' head(data)
+#'
+#' @export
 cases <- function(states) {
   purrr::map_dfr(states, load_cases_state)
 }
