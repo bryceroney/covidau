@@ -4,6 +4,8 @@
 # covidau
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/bryceroney/covidau/workflows/R-CMD-check/badge.svg)](https://github.com/bryceroney/covidau/actions)
 <!-- badges: end -->
 
 The goal of covidau is to …
