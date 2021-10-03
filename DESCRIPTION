@@ -2,8 +2,8 @@ Package: covidau
 Type: Package
 Title: Functions For Downloading Tidy COVID Data in Australia
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Authors@R: person("Bryce", "Roney", email = "bryceroney@protonmail.com",
+  role = c("aut", "cre"))
 Description: This is predominantly a proof of concept package to assist me with
   learning more about package development.
 License: MIT + file LICENSE
