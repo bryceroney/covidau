@@ -1,11 +1,17 @@
 Package: covidau
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Functions For Downloading Tidy COVID Data in Australia
 Version: 0.1.0
 Author: Who wrote it
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Description: This is predominantly a proof of concept package to assist me with
+  learning more about package development.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.1.2
+Imports: 
+    httr2,
+    janitor,
+    magrittr,
+    rvest
