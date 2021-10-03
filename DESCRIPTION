@@ -19,3 +19,5 @@ Imports:
     purrr,
     rlang,
     rvest
+URL: https://github.com/bryceroney/covidau
+BugReports: https://github.com/bryceroney/covidau/issues
